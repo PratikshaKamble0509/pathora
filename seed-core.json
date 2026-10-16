@@ -1,0 +1,162 @@
+[
+ {
+  "id": "upsc",
+  "n": "UPSC Civil Services",
+  "sec": "Government",
+  "cat": "UPSC & state services",
+  "min": 3,
+  "int": [
+   "Government service",
+   "Administration"
+  ],
+  "d": "Recruitment to central civil services through a multi-stage national examination.",
+  "el": "Degree from a recognised university; age and attempt limits apply.",
+  "sel": "Prelims → Mains → Interview",
+  "link": "https://upsc.gov.in",
+  "mo": 18,
+  "ph": {
+   "Foundation": "NCERT basics:12|Polity:14|History:14|Geography:12|Economy:12",
+   "Advanced": "Environment & ecology:8|Current affairs:12|Ethics & essay:14",
+   "Practice": "Prelims mock tests:12|Answer writing:12|Revision:12"
+  }
+ },
+ {
+  "id": "bank",
+  "n": "Bank PO / Clerk (IBPS)",
+  "sec": "Government",
+  "cat": "Banking",
+  "min": 3,
+  "int": [
+   "Finance",
+   "Government service"
+  ],
+  "d": "Public-sector bank recruitment via common written exams.",
+  "el": "Graduation in any discipline; age limits per notification.",
+  "sel": "Prelims → Mains → Interview (PO)",
+  "link": "https://www.ibps.in",
+  "mo": 6,
+  "ph": {
+   "Core skills": "Quantitative aptitude:20|Reasoning:16|English:14|Banking awareness:10",
+   "Practice": "Sectional tests:10|Full mock tests:16|Revision:8"
+  }
+ },
+ {
+  "id": "ssc",
+  "n": "SSC Combined Graduate Level",
+  "sec": "Government",
+  "cat": "SSC",
+  "min": 3,
+  "int": [
+   "Administration",
+   "Government service"
+  ],
+  "d": "Group B/C posts in central government ministries and departments.",
+  "el": "Graduation for most posts; verify per post.",
+  "sel": "Tier I → Tier II → Skill/document verification",
+  "link": "https://ssc.gov.in",
+  "mo": 8,
+  "ph": {
+   "Core skills": "Quantitative aptitude:22|Reasoning:16|English:16|General awareness:14",
+   "Practice": "Mock tests:18|Revision:8"
+  }
+ },
+ {
+  "id": "ctet",
+  "n": "Teacher Eligibility (CTET)",
+  "sec": "Government",
+  "cat": "Teaching",
+  "min": 1,
+  "int": [
+   "Teaching"
+  ],
+  "d": "Eligibility test for teaching in central-government-linked schools.",
+  "el": "Requires Class 12 plus teacher-training qualification; verify current rules.",
+  "sel": "Paper I / Paper II",
+  "link": "https://ctet.nic.in",
+  "mo": 5,
+  "ph": {
+   "Subjects": "Child development & pedagogy:14|Language I:10|Language II:10|Maths or EVS:14",
+   "Practice": "Previous-year papers:10|Mock tests:8"
+  }
+ },
+ {
+  "id": "swe",
+  "n": "Software Developer",
+  "sec": "Private",
+  "cat": "IT & software",
+  "min": 2,
+  "int": [
+   "Technology"
+  ],
+  "d": "Build software products; entry via skills, projects and interviews.",
+  "el": "Degree/diploma preferred; many employers hire on demonstrated skill.",
+  "sel": "Online test → Technical interviews → HR",
+  "link": "https://roadmap.sh",
+  "mo": 9,
+  "ph": {
+   "Basics": "Programming fundamentals:20|Data structures & algorithms:30",
+   "Build": "Web development:24|Portfolio projects:30",
+   "Interview": "Mock interviews & revision:15"
+  }
+ },
+ {
+  "id": "data",
+  "n": "Data Analyst",
+  "sec": "Private",
+  "cat": "IT & software",
+  "min": 2,
+  "int": [
+   "Technology",
+   "Finance"
+  ],
+  "d": "Turn data into insight using spreadsheets, SQL and Python.",
+  "el": "No fixed eligibility; numeracy helps.",
+  "sel": "Portfolio → Case/technical round",
+  "link": "https://www.coursera.org",
+  "mo": 6,
+  "ph": {
+   "Tools": "Excel:10|SQL:16|Python for data:20",
+   "Analysis": "Statistics:14|Visualisation:8",
+   "Portfolio": "Capstone project:20|Resume & interview prep:8"
+  }
+ },
+ {
+  "id": "ca",
+  "n": "CA Foundation (ICAI)",
+  "sec": "Education pathway",
+  "cat": "Professional qualifications",
+  "min": 1,
+  "int": [
+   "Finance"
+  ],
+  "d": "First level of the Chartered Accountancy qualification.",
+  "el": "Class 12 (appearing or passed) and registration; verify with ICAI.",
+  "sel": "Written exam",
+  "link": "https://www.icai.org",
+  "mo": 6,
+  "ph": {
+   "Subjects": "Accounting:22|Business law:12|Maths & statistics:16|Economics:10",
+   "Practice": "Mock papers:12|Revision:8"
+  }
+ },
+ {
+  "id": "ux",
+  "n": "UX / UI Designer",
+  "sec": "Private",
+  "cat": "Design & creative",
+  "min": 1,
+  "int": [
+   "Design",
+   "Technology"
+  ],
+  "d": "Design usable digital products.",
+  "el": "No fixed eligibility; portfolio matters most.",
+  "sel": "Portfolio review → Design task → Interview",
+  "link": "https://www.figma.com/resources/learn-design/",
+  "mo": 6,
+  "ph": {
+   "Foundations": "Design principles:10|Figma:12",
+   "Practice": "Portfolio projects:24|Case studies:10"
+  }
+ }
+]

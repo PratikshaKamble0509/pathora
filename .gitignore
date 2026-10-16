@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+!.env.example
+pathora.db
+pathora.db-shm
+pathora.db-wal
