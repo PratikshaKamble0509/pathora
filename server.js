@@ -65,6 +65,25 @@ const ck=(req.headers.cookie||'').match(/pathora=([a-f0-9]{64})/);req.tok=ck&&ck
 const setCk=id=>{if(id==null){hdr['Set-Cookie']='pathora=; HttpOnly; SameSite=Lax; Path=/; Max-Age=0';return}const t=crypto.randomBytes(32).toString('hex');run('INSERT INTO sessions VALUES(?,?,?)',t,id,Date.now()+6048e5);hdr['Set-Cookie']=`pathora=${t}; HttpOnly; SameSite=Lax; Path=/; Max-Age=604800`};
 const out=await api(req,res,m,p.slice(4),b,u||null,setCk);res.writeHead(200,{'Content-Type':'application/json',...hdr});res.end(JSON.stringify(out))}
 catch(e){const st=e.status||500;if(st==500)console.error(e);res.writeHead(st,{'Content-Type':'application/json'});res.end(JSON.stringify({error:st==500?'Server error':e.message,errors:e.errors}))}});
-return{server,db}}
-module.exports={createApp};
-if(require.main===module){const{server}=createApp(process.env.PATHORA_DB||R('pathora.db'),process.env.ADMIN_EMAIL||'');server.listen(+process.env.PORT||3000,()=>console.log('Pathora listening on port '+(process.env.PORT||3000)))}
+return { server, db };
+}
+
+if (require.main === module) {
+  const { server } = createApp(
+    process.env.PATHORA_DB || R("pathora.db"),
+    process.env.ADMIN_EMAIL || ""
+  );
+
+  server.listen(
+    Number(process.env.PORT) || 3000,
+    () => console.log("Pathora listening on port " + (process.env.PORT || 3000))
+  );
+} else {
+  const { server } = createApp(
+    process.env.PATHORA_DB || "/tmp/pathora.db",
+    process.env.ADMIN_EMAIL || ""
+  );
+
+  module.exports = server;
+  module.exports.createApp = createApp;
+}
