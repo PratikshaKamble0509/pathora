@@ -1,5 +1,5 @@
-﻿{
-  "version": 2,
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/(.*)",
@@ -7,12 +7,8 @@
     }
   ],
   "functions": {
-    "api/index.js": {
-      "includeFiles": [
-        "public/**",
-        "schema.sql",
-        "seed.js"
-      ]
+    "api/*.js": {
+      "includeFiles": "{public/**,schema.sql,seed.js}"
     }
   }
 }
